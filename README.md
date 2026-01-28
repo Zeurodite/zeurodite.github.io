@@ -153,7 +153,7 @@ Found a bug or want to contribute? Feel free to open an issue or submit a pull r
 ## 📧 Contact
 
 - **Email**: abdielrodriguez.668@gmail.com
-- **GitHub**: [@abdielrodriguez](https://github.com/Zeurodite)
+- **GitHub**: [@Zeurodite](https://github.com/Zeurodite)
 - **LinkedIn**: [Abdiel H. Rodriguez](https://linkedin.com/in/abdielrodriguez)
 
 ---
