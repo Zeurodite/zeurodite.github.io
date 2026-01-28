@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abdiel H. Rodriguez - Computer Science student specializing in backend development, security, and software engineering. Portfolio showcasing projects in Python, Flask, Linux automation, and more.">
+    <meta name="keywords" content="Computer Science, Software Developer, Backend Developer, Python, Flask, Linux, Security, Puerto Rico">
+    <meta name="author" content="Abdiel H. Rodriguez">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://abdielrodriguez.dev/">
+    <meta property="og:title" content="Abdiel H. Rodriguez - Computer Science Student & Developer">
+    <meta property="og:description" content="Computer Science student specializing in backend development, security, and software engineering.">
+    <meta property="og:image" content="https://abdielrodriguez.dev/preview.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://abdielrodriguez.dev/">
+    <meta property="twitter:title" content="Abdiel H. Rodriguez - Computer Science Student & Developer">
+    <meta property="twitter:description" content="Computer Science student specializing in backend development, security, and software engineering.">
+    <meta property="twitter:image" content="https://abdielrodriguez.dev/preview.jpg">
+    
+    <title>Abdiel H. Rodriguez - Developer Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💻%3C/text%3E%3C/svg%3E">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#repositories">Repositories</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%23333' width='400' height='400'/%3E%3Ccircle cx='200' cy='150' r='60' fill='%23666'/%3E%3Cellipse cx='200' cy='280' rx='100' ry='120' fill='%23555'/%3E%3C/svg%3E" alt="Abdiel H. Rodriguez Profile">
+            </div>
+            
+            <div class="hero-text">
+                <h1>Abdiel H. Rodriguez</h1>
+                <p class="hero-description">
+                    Hi there, I'm Abdiel H. Rodriguez 👋, a Computer Science student from Puerto Rico 🇵🇷 with a strong interest in software development, backend systems, and security. I spend my time building and improving projects, learning new technologies, and applying programming concepts to real-world problems. I've also worked on web development projects for small businesses and professionals.
+                </p>
+                
+                <div class="social-links">
+                    <a href="https://github.com/abdielrodriguez" target="_blank" class="social-btn" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/abdielrodriguez" target="_blank" class="social-btn" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/abdielrodriguez" target="_blank" class="social-btn" aria-label="Twitter/X">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:abdiel@example.com" class="social-btn" aria-label="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <a href="#" class="resume-btn" download>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section reveal">
+        <div class="stat-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Technologies</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">3+</div>
+            <div class="stat-label">Years Coding</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Committed</div>
+        </div>
+    </section>
+
+    <section class="commission-status">
+        <h2>Commission Status</h2>
+        <div class="status-badges">
+            <div class="status-badge open">
+                <span class="status-icon">✓</span>
+                <span>Open for Commissions</span>
+            </div>
+            <div class="status-badge queue">
+                <span class="status-icon">⏱</span>
+                <span>Queue: 0</span>
+                <span style="opacity: 0.7; font-size: 0.9rem; margin-left: 0.3rem;">(Okay 🙂)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="skills-container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <h3>
+                        <span>💻</span>
+                        Languages
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Bash/Shell</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Java</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3>
+                        <span>🛠️</span>
+                        Frameworks & Tools
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">pytest</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3>
+                        <span>💾</span>
+                        Databases
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">Redis</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3>
+                        <span>🐧</span>
+                        Systems & DevOps
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">System Administration</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Networking</span>
+                        <span class="skill-tag">Automation</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3>
+                        <span>🔒</span>
+                        Security
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Security Auditing</span>
+                        <span class="skill-tag">Log Analysis</span>
+                        <span class="skill-tag">Vulnerability Assessment</span>
+                        <span class="skill-tag">Authentication</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3>
+                        <span>📚</span>
+                        Concepts
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Software Testing</span>
+                        <span class="skill-tag">Algorithms</span>
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">OOP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="work-section">
+        <h2 class="section-title">My Work</h2>
+        <div class="work-grid">
+            <div class="work-card">
+                <div class="card-icon">💼</div>
+                <h3>Development Services</h3>
+                <p>Looking for development services? I offer backend development, web applications, Linux automation, security analysis, and software testing solutions.</p>
+                <a href="#services" class="card-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 0 0-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"/>
+                    </svg>
+                    View Services
+                </a>
+            </div>
+            
+            <div class="work-card">
+                <div class="card-icon">📁</div>
+                <h3>Personal Projects</h3>
+                <p>Check out my collection of projects including software testing, Linux automation, Flask applications, network simulations, and security monitoring tools.</p>
+                <a href="#projects" class="card-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2h-8l-2-2z"/>
+                    </svg>
+                    View Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <!-- Project Filters -->
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <div class="skill-tags" style="justify-content: center; display: inline-flex;">
+                    <span class="skill-tag filter-tag active" data-filter="all" style="cursor: pointer;">All</span>
+                    <span class="skill-tag filter-tag" data-filter="python" style="cursor: pointer;">Python</span>
+                    <span class="skill-tag filter-tag" data-filter="web" style="cursor: pointer;">Web</span>
+                    <span class="skill-tag filter-tag" data-filter="security" style="cursor: pointer;">Security</span>
+                    <span class="skill-tag filter-tag" data-filter="linux" style="cursor: pointer;">Linux</span>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card reveal" data-category="python testing">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #00d9ff 0%, #00a8cc 100%);">
+                            🧪
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Software Testing & Validation</h3>
+                        <p>Designed comprehensive unit and integration tests using pytest to validate software functionality. Created a lightweight test plan and documented expected behaviors for quality assurance.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">pytest</span>
+                            <span class="tag">Testing</span>
+                        </div>
+                        <a href="https://github.com/abdielrodriguez/software-testing" target="_blank" class="project-link">View on GitHub →</a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="linux bash">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #00ffc8 0%, #00cc9f 100%);">
+                            🐧
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Linux Automation & System Tasks</h3>
+                        <p>Developed shell scripts for automating system administration tasks including backups, disk usage reports, and process monitoring to improve operational efficiency.</p>
+                        <div class="project-tags">
+                            <span class="tag">Bash</span>
+                            <span class="tag">Linux</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        <a href="https://github.com/abdielrodriguez/linux-automation" target="_blank" class="project-link">View on GitHub →</a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="python web">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #0099ff 0%, #0077cc 100%);">
+                            🌐
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Flask Client–Server Application</h3>
+                        <p>Built a Flask-based web application with REST APIs and input validation. Implemented secure backend systems and proper data handling practices.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flask</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                        <a href="https://github.com/abdielrodriguez/flask-api" target="_blank" class="project-link">View on GitHub →</a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="security linux">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #00ffaa 0%, #00cc88 100%);">
+                            🔒
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>System Monitoring & Cybersecurity</h3>
+                        <p>Performed system monitoring and basic log analysis in Linux environments. Implemented security practices and analyzed system behavior for potential vulnerabilities.</p>
+                        <div class="project-tags">
+                            <span class="tag">Linux</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">Monitoring</span>
+                        </div>
+                        <a href="https://github.com/abdielrodriguez/security-monitoring" target="_blank" class="project-link">View on GitHub →</a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="networking">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);">
+                            🌐
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Network & Systems Simulation</h3>
+                        <p>Designed and validated network topologies, IP addressing schemes, and connectivity using Cisco Packet Tracer. Implemented and tested various networking protocols.</p>
+                        <div class="project-tags">
+                            <span class="tag">Networking</span>
+                            <span class="tag">Cisco</span>
+                            <span class="tag">IP</span>
+                        </div>
+                        <a href="https://github.com/abdielrodriguez/network-simulation" target="_blank" class="project-link">View on GitHub →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Latest Blog Posts</h2>
+            <div class="blog-grid">
+                <article class="blog-card reveal">
+                    <div class="blog-date">Jan 20, 2026</div>
+                    <h3>Best Practices for Flask API Development</h3>
+                    <p>Learn how to build secure, scalable Flask APIs with proper error handling, input validation, and authentication mechanisms.</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </article>
+
+                <article class="blog-card reveal">
+                    <div class="blog-date">Jan 12, 2026</div>
+                    <h3>Linux System Administration Essentials</h3>
+                    <p>A comprehensive guide to essential Linux commands, automation techniques, and system monitoring tools for efficient administration.</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </article>
+
+                <article class="blog-card reveal">
+                    <div class="blog-date">Jan 05, 2026</div>
+                    <h3>Software Testing with pytest: A Complete Guide</h3>
+                    <p>Deep dive into writing effective unit and integration tests using pytest, including fixtures, mocking, and test organization strategies.</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Repositories Section -->
+    <section id="repositories" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Open Source Repositories</h2>
+            <div class="repos-grid">
+                <div class="repo-card reveal">
+                    <div class="repo-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <h3>flask-api-template</h3>
+                    </div>
+                    <p>Production-ready Flask API template with authentication, validation, and best practices built-in.</p>
+                    <div class="repo-stats">
+                        <span>⭐ 187</span>
+                        <span>🔀 34</span>
+                        <span class="repo-lang">Python</span>
+                    </div>
+                </div>
+
+                <div class="repo-card reveal">
+                    <div class="repo-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <h3>linux-automation-scripts</h3>
+                    </div>
+                    <p>Collection of bash scripts for system administration, backups, monitoring, and automation tasks.</p>
+                    <div class="repo-stats">
+                        <span>⭐ 142</span>
+                        <span>🔀 28</span>
+                        <span class="repo-lang">Shell</span>
+                    </div>
+                </div>
+
+                <div class="repo-card reveal">
+                    <div class="repo-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <h3>pytest-examples</h3>
+                    </div>
+                    <p>Comprehensive examples and patterns for software testing with pytest, fixtures, and mocking.</p>
+                    <div class="repo-stats">
+                        <span>⭐ 201</span>
+                        <span>🔀 42</span>
+                        <span class="repo-lang">Python</span>
+                    </div>
+                </div>
+
+                <div class="repo-card reveal">
+                    <div class="repo-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <h3>security-monitoring-tools</h3>
+                    </div>
+                    <p>Linux security monitoring and log analysis tools for system administrators and security professionals.</p>
+                    <div class="repo-stats">
+                        <span>⭐ 165</span>
+                        <span>🔀 31</span>
+                        <span class="repo-lang">Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Timeline -->
+    <section id="experience" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">Experience & Education</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - Present</div>
+                        <h3>Computer Science Student</h3>
+                        <p>University of Puerto Rico • Focusing on software development, backend systems, and cybersecurity. Relevant coursework includes Data Structures, Algorithms, Database Systems, and Software Engineering.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Present</div>
+                        <h3>Freelance Web Developer</h3>
+                        <p>Developing web applications and solutions for small businesses and professionals. Specializing in backend development, API integration, and custom automation scripts.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <h3>Linux System Administration Project</h3>
+                        <p>Completed comprehensive system administration project including automation scripts, security monitoring, and performance optimization for Linux environments.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022</div>
+                        <h3>Started Programming Journey</h3>
+                        <p>Began learning Python and web development fundamentals. Built first projects focusing on automation and problem-solving.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Services I Offer</h2>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Full-stack web development with a focus on backend systems. Building secure, scalable applications with modern frameworks and best practices.</p>
+                    <ul class="service-features">
+                        <li>Backend API development (Flask, Node.js)</li>
+                        <li>Frontend development (React, HTML/CSS/JS)</li>
+                        <li>Database design & optimization</li>
+                        <li>Security implementation</li>
+                    </ul>
+                    <div class="service-price">Starting at $300</div>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon">🔒</div>
+                    <h3>Security & System Analysis</h3>
+                    <p>System monitoring, log analysis, and security auditing for Linux environments. Identifying vulnerabilities and implementing security best practices.</p>
+                    <ul class="service-features">
+                        <li>System monitoring & log analysis</li>
+                        <li>Security auditing</li>
+                        <li>Vulnerability assessment</li>
+                        <li>Security recommendations</li>
+                    </ul>
+                    <div class="service-price">Starting at $250</div>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon">🐧</div>
+                    <h3>Linux Automation</h3>
+                    <p>Custom shell scripts and automation tools for system administration tasks. Streamline your workflow with efficient automation solutions.</p>
+                    <ul class="service-features">
+                        <li>Custom shell scripts</li>
+                        <li>System task automation</li>
+                        <li>Backup solutions</li>
+                        <li>Process monitoring tools</li>
+                    </ul>
+                    <div class="service-price">Starting at $150</div>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon">🧪</div>
+                    <h3>Software Testing</h3>
+                    <p>Comprehensive testing solutions including unit tests, integration tests, and test automation. Ensuring code quality and reliability.</p>
+                    <ul class="service-features">
+                        <li>Unit & integration testing</li>
+                        <li>Test automation (pytest)</li>
+                        <li>Test plan documentation</li>
+                        <li>Code quality analysis</li>
+                    </ul>
+                    <div class="service-price">Starting at $200</div>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon">🌐</div>
+                    <h3>API Development</h3>
+                    <p>RESTful API design and implementation with proper authentication, validation, and documentation. Building robust backend services.</p>
+                    <ul class="service-features">
+                        <li>RESTful API design</li>
+                        <li>Authentication & authorization</li>
+                        <li>API documentation</li>
+                        <li>Input validation & security</li>
+                    </ul>
+                    <div class="service-price">Starting at $350</div>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon">🛠️</div>
+                    <h3>Consulting & Code Review</h3>
+                    <p>Technical consultation, code reviews, and debugging assistance. Helping you build better software with best practices and clean code.</p>
+                    <ul class="service-features">
+                        <li>Code review & refactoring</li>
+                        <li>Architecture consultation</li>
+                        <li>Bug fixing & debugging</li>
+                        <li>Best practices guidance</li>
+                    </ul>
+                    <div class="service-price">$40/hour</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content reveal">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:abdiel@example.com">abdiel@example.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">💬</div>
+                            <div>
+                                <h4>Discord</h4>
+                                <p>Abdiel#1234</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">🐦</div>
+                            <div>
+                                <h4>Social Media</h4>
+                                <p>@abdielrodriguez</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service...</option>
+                            <option value="web">Web Development</option>
+                            <option value="security">Security & System Analysis</option>
+                            <option value="linux">Linux Automation</option>
+                            <option value="testing">Software Testing</option>
+                            <option value="api">API Development</option>
+                            <option value="consulting">Consulting & Code Review</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        Send Message
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Abdiel H. Rodriguez. Built with passion from Puerto Rico 🇵🇷</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.7;">Computer Science Student | Backend Developer | Security Enthusiast</p>
+    </footer>
+
+    <!-- Reduce Motion Toggle -->
+    <button class="motion-toggle" id="motionToggle">
+        <span>🎬</span>
+        <span>Reduce Motion</span>
+    </button>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
